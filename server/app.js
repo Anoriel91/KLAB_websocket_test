@@ -9,8 +9,8 @@ var listeners = [];
 //setting up the redis clients, 1 for posting and adding things to the storage
 //2 for listening for new messages from other servers
 var redis = require("redis"),
-    redisClient = redis.createClient('6379', 'redis'), //1
-    subClient = redis.createClient('6379', 'redis'); //2
+    redisClient = redis.createClient(), //1
+    subClient = redis.createClient(); //2
 
 //subscribe to all server* channels
 subClient.psubscribe('server*');

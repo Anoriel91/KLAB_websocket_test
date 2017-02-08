@@ -5,9 +5,11 @@ I got started on fixing a docker-based run, but unfortunately due to time constr
 I did not add any extra libraries besides the websocket module and the redis_node module.
 
 Start clients by opening the client.html in /client
-Start servers by running \n
-```node server/app <port_number of your choice>``` \n
-Example:\n
+run a redis server
+```redis-server```
+Start servers by running 
+```node server/app <port_number of your choice>```
+Example:
 ```node server/app 8080```
 
 The client frontend has not changed.
